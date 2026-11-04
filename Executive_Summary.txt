@@ -1,0 +1,13 @@
+EXECUTIVE SUMMARY - Logistics, Delivery & Returns (Option B)
+- Goal: measure delivery performance and find what drives product returns.
+- Data: 7 tables (customers, products, orders, items, payments, shipments, returns); cleaned and documented.
+- Cleaning: removed duplicate orders/customers/items, fixed categories, dates and currency text, flagged orphan keys.
+- 77.9% of shipments were delivered, 18.0% are still in transit, 3.1% returned to sender, 1.1% lost.
+- Average delivery lead time is 4.0 days (1-7 days) and is nearly identical across all 5 couriers.
+- J&T has the highest lost (1.25%) and returned-to-sender (3.58%) rates.
+- The overall return rate is 8.0% (1,200 of 15,000 orders).
+- About 70% of returns come from controllable causes (defective, missing parts, wrong or damaged item, late delivery).
+- Return rates are slightly higher for NinjaVan/J&T and for Home & Kitchen, but gaps are small.
+- Data quality issue: many non-delivered shipments carry a delivery date and statuses look outdated.
+- Recommendation 1: add quality and packing checks to cut controllable returns.
+- Recommendation 2: review J&T performance and require status and date updates together.

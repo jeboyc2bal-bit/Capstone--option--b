@@ -1,0 +1,27 @@
+table,issue,action,rows_affected
+customers,duplicate customer_id,kept first row,50
+customers,messy gender labesl and blanks,standardized to Male/Female/Unknown,5000
+customers,negative age,set to blank (NaN),48
+customers,missing or wrong email,added email_valid column,4777
+customers,missing or short number,added phone_valid column,278
+customers,mixed date formats,converted to real dates,5000
+customers,blank loyalty_tier,filled with None,264
+products,inconsistent category labels,mapped to 8 clean categories,137
+products,currency stored as text,converted to numbers,800
+products,missing stock_qty,filled with median,19
+orders,duplicate order_id,kept first row,75
+orders,mixed datetime formats,parsed with format=mixed,15000
+orders,missing discount_pct,filled with 0,756
+orders,missing shipping_fee,filled with median,470
+orders,unknown customer_id,flagged customer_found=False (kept),43
+order_items,duplicate rows,dropped exact duplicates,262
+order_items,quantity = 0 (invalid),dropped rows,372
+order_items,orphan product_id,dropped rows,127
+order_items,missing unit_price_at_purchase,backfilled from products,2208
+shipments,mixed date formats,parsed with format=mixed,15000
+shipments,negative lead time,set to blank,0
+shipments,delivered_date present but status not Delivered,excluded from lead-time stats,3149
+returns,blank refunded_flag,filled with Unknown,110
+returns,missing refund_amount,left blank (not guessed),187
+returns,orphan order_id,none found,0
+payments,currency text and mixed dates,converted,15000
