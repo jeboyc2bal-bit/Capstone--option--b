@@ -26,10 +26,10 @@ def style_chart(fig, title, x_title, y_title):
     fig.update_yaxes(gridcolor="rgba(148, 163,184,0.2)", zeroline=False)
     return fig
 
-shipment = pd.read_csv("C:/Users/Erkai/capstone-option-b/data/cleaned/cleaned_shipments.csv")
-returns = pd.read_csv("C:/Users/Erkai/capstone-option-b/data/cleaned/cleaned_returns.csv")
-items = pd.read_csv("C:/Users/Erkai/capstone-option-b/data/cleaned/cleaned_order_items.csv")
-products = pd.read_csv("C:/Users/Erkai/capstone-option-b/data/cleaned/cleaned_products.csv")
+shipment = pd.read_csv("C:/Users/Erkai/capstone-option-b/Capstone-option-b/data/cleaned/cleaned_shipments.csv")
+returns = pd.read_csv("C:/Users/Erkai/capstone-option-b/Capstone-option-b/data/cleaned/cleaned_returns.csv")
+items = pd.read_csv("C:/Users/Erkai/capstone-option-b/Capstone-option-b/data/cleaned/cleaned_order_items.csv")
+products = pd.read_csv("C:/Users/Erkai/capstone-option-b/Capstone-option-b/data/cleaned/cleaned_products.csv")
 
 st.title("Logistics, Delivery & Returns Dashboard")
 st.caption("How well are we delivering, and what causes returns?")
